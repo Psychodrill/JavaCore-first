@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   app:
-    image: java-21-openjdk-amd64
+    image: bellsoft/liberica-openjdk-alpine:11.0.16.1-1
     command: javadoc -sourcepath src -cp /ourclasses/ -d mydocumentation -subpackages ru
     volumes:
       - ./bin:/ourclasses
